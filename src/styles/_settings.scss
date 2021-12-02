@@ -2,10 +2,10 @@
 
 $font-1: 'Poppins', sans-serif;
 
-$color-1: #be3144;
-$color-2: #f7f7f7;
-$color-3: #282c34;
-$color-4: #45567d;
+$color-1: #94e99f;
+$color-2: #11171a;
+$color-3: #263238;
+$color-4: #f7f7f7;
 
 * {
   box-sizing: border-box;
@@ -25,6 +25,7 @@ html {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
+  background-color: $color-3;
 }
 
 li {
@@ -80,6 +81,7 @@ a:visited {
 body {
   font-family: 'Poppins', sans-serif;
   max-width: 1296px;
+  color: $color-1;
   /* display: flex;
     flex-direction: column;
     align-items: center;
