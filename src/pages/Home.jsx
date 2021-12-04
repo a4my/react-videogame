@@ -1,18 +1,16 @@
 import React from 'react'
-import Cards from '../components/Cards.jsx'
+import CardsContainer from '../components/CardsContainer.jsx'
+import Navbar from '../components/Navbar.jsx'
+import Sidebar from '../components/Sidebar.jsx'
 
 export default function Home() {
   return (
-    <div className="home">
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-    </div>
+    <>
+      <Navbar />
+      <div className="home">
+        <Sidebar />
+        <CardsContainer />
+      </div>
+    </>
   )
 }
