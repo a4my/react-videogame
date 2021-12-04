@@ -1,0 +1,97 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 7rem;
+  width: 100%;
+  background-color: $color-2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  transition: all 0.3s ease-out;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    cursor: pointer;
+
+    p {
+      margin-right: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  .searchbar {
+    width: 30%;
+    background-color: $color-3;
+    padding: 1rem;
+    border-radius: 3rem;
+
+    &:hover,
+    &:hover input,
+    &:hover input::placeholder,
+    &:focus-within {
+      background-color: $color-4;
+      color: $color-2;
+    }
+
+    i {
+      font-size: 1.5rem;
+    }
+
+    input {
+      width: 80%;
+      border: none;
+      outline: none;
+      background-color: $color-3;
+      margin-left: 1rem;
+      font-family: inherit;
+
+      &::placeholder {
+        color: $color-1;
+        opacity: 0.6;
+      }
+
+      &:focus,
+      &:focus::placeholder {
+        background-color: $color-4;
+        color: $color-2;
+      }
+    }
+  }
+
+  .account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.7rem;
+
+    .fas {
+      margin-right: 3rem;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.4);
+      }
+    }
+
+    p {
+      text-align: center;
+      padding-top: 0.4rem;
+      height: 3.5rem;
+      width: 3.5rem;
+      border-radius: 50%;
+      background-color: $color-1;
+      color: $color-2;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
