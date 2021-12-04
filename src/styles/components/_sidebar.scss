@@ -1,0 +1,40 @@
+.sidebar {
+  //   display: flex;
+  //   flex-direction: column;
+  flex: 1;
+  height: calc(100vh - 7rem);
+  position: sticky;
+  top: 7rem;
+  left: 0;
+  overflow-y: hidden;
+  background-color: $color-2;
+  padding: 1rem 0 1rem 3rem;
+
+  .sidebarItem {
+    margin-bottom: 1rem;
+  }
+
+  .listItem {
+    font-size: 1.6rem;
+    display: flex;
+    margin-bottom: 0.5rem;
+
+    &:hover .listItemBtn {
+      background-color: $color-1;
+      color: $color-3;
+    }
+
+    .listItemBtn {
+      height: 2.7rem;
+      width: 2.7rem;
+      background-color: $color-3;
+      text-align: center;
+      border-radius: 0.5rem;
+      margin-right: 0.5rem;
+    }
+
+    &:last-child {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
