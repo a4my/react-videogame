@@ -3,7 +3,7 @@
 
   .card-item {
     width: 37rem;
-    height: 37rem;
+    height: auto;
     color: $color-4;
     background-color: $color-2;
     border-radius: 1rem;
@@ -13,77 +13,167 @@
     &:hover {
       transform: scale(1.05);
     }
-  }
 
-  .gameCoverImg {
-    width: 100%;
-    height: 20rem;
-    border-radius: 1rem 1rem 0 0;
-  }
-
-  .infoWrapper {
-    padding: 1.5rem;
-
-    .infoContainer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 1.6rem;
-      margin-bottom: 0.7rem;
-      text-transform: capitalize;
-
-      ul {
-        display: flex;
-
-        li {
-          margin-right: 1rem;
-          font-size: 1.8rem;
-        }
-      }
-
-      p {
-        border: 1px solid $color-1;
-        padding: 0.3rem 0.6rem;
-        color: $color-1;
-        border-radius: 0.6rem;
-      }
+    .gameCoverImg {
+      width: 100%;
+      height: 20rem;
+      border-radius: 1rem 1rem 0 0;
     }
 
-    .gameTitle {
-      font-size: 2.5rem;
-      cursor: pointer;
-      margin-bottom: 0.7rem;
+    .infoWrapper {
+      padding: 1.5rem;
 
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-
-    .ratingsContainer {
-      display: flex;
-
-      .ratingBtn {
+      .infoContainer {
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 0.5rem 1rem;
+        justify-content: space-between;
+        font-size: 1.6rem;
+        margin-bottom: 0.7rem;
+        text-transform: capitalize;
+
+        ul {
+          display: flex;
+
+          li {
+            margin-right: 1rem;
+            font-size: 1.8rem;
+          }
+        }
+
+        p {
+          border: 1px solid $color-1;
+          padding: 0.3rem 0.6rem;
+          color: $color-1;
+          border-radius: 0.6rem;
+        }
+      }
+
+      .gameTitle {
+        font-size: 2.5rem;
         cursor: pointer;
-        background-color: $color-3;
-        color: $color-4;
-        outline: none;
-        border: none;
-        border-radius: 0.5rem;
-        margin-right: 0.5rem;
-        transition: all 0.2s ease-in-out;
+        margin-bottom: 0.7rem;
 
         &:hover {
-          background-color: $color-4;
-          color: $color-3;
+          opacity: 0.5;
+        }
+      }
+
+      .ratingsContainer {
+        display: flex;
+
+        .ratingBtn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.5rem 1rem;
+          cursor: pointer;
+          background-color: $color-3;
+          color: $color-4;
+          outline: none;
+          border: none;
+          border-radius: 0.5rem;
+          margin-right: 0.5rem;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            background-color: $color-4;
+            color: $color-3;
+          }
         }
 
-        i {
-          margin-right: 0.5rem;
+        .ratingBtn:nth-child(1) {
+          i {
+            margin-right: 0.5rem;
+          }
         }
+
+        .ratingBtn:nth-child(2),
+        .ratingBtn:nth-child(3) {
+          opacity: 0;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .card-item:hover {
+    .showMoreCard {
+      display: block;
+    }
+    .ratingsContainer {
+      .ratingBtn:nth-child(2),
+      .ratingBtn:nth-child(3) {
+        opacity: 1;
+      }
+    }
+  }
+
+  .showMoreCard {
+    display: none;
+    padding: 1.5rem;
+    height: 25rem;
+    background-color: $color-2;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.02);
+    transition: all 0.2s ease-in-out;
+
+    .detailsContainer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.4rem;
+
+      &:nth-child(1) {
+        padding-bottom: 1rem;
+      }
+
+      &:nth-child(2) {
+        border-bottom: 1px solid $color-3;
+        border-top: 1px solid $color-3;
+        padding: 1rem 0;
+      }
+
+      &:nth-child(3) {
+        padding: 1rem 0 3rem 0;
+      }
+
+      .detailsKey {
+        color: $color-5;
+      }
+    }
+
+    .detailsBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 4rem;
+      background-color: $color-3;
+      border: none;
+      color: $color-4;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+
+      p {
+        transition: transform 0.3s ease-in-out;
+      }
+      .fas {
+        transform: translateX(-1rem);
+        opacity: 0;
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+
+    .detailsBtn:hover {
+      transform: scale(1.03);
+
+      p {
+        transform: translateX(-1rem);
+      }
+      .fas {
+        transform: translateX(1rem);
+        opacity: 1;
       }
     }
   }
