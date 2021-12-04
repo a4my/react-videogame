@@ -27,15 +27,33 @@ export default function Cards() {
               <i className="fas fa-plus"></i>
               <p>2900</p>
             </button>
-            <button className="ratingBtn invisbleBtn">
-              <i class="fas fa-gift"></i>
+            <button className="ratingBtn">
+              <i className="fas fa-gift"></i>
             </button>
-            <button className="ratingBtn invisbleBtn">
-              <i class="fas fa-ellipsis-h"></i>
+            <button className="ratingBtn">
+              <i className="fas fa-ellipsis-h"></i>
             </button>
           </div>
         </div>
-        <div className="extensionCard"></div>
+        <div className="showMoreCard">
+          <div className="detailsContainer">
+            <p className="detailsKey">Release Date:</p>
+            <p className="detailsValue">25 June, 2016</p>
+          </div>
+          <div className="detailsContainer">
+            <p className="detailsKey">Genre:</p>
+            <p className="detailsValue">AAA</p>
+          </div>
+          <div className="detailsContainer">
+            <p className="detailsKey">Chart:</p>
+            <p className="detailsValue">#1</p>
+          </div>
+          <button className="detailsBtn">
+            <p>Show more like this</p>
+            <i className="fas fa-chevron-right"></i>
+          </button>
+          <button className="detailsBtn">Hide this game</button>
+        </div>
       </div>
     </div>
   )
