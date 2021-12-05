@@ -1,12 +1,14 @@
 import React from 'react'
 
-export default function Cards() {
+export default function Cards(props) {
+  const { game } = props
+
   return (
     <div className="card-container">
       <div className="card-item">
         <img
           className="gameCoverImg"
-          src="./../img/game-cover.jpg"
+          src={game.background_image}
           alt="Game Cover"
         />
         <div className="infoWrapper">
@@ -19,13 +21,13 @@ export default function Cards() {
                 <i className="fab fa-xbox"></i>
               </li>
             </ul>
-            <p>95</p>
+            <p>{game.metacritic}</p>
           </div>
-          <h1 className="gameTitle">Red Dead Redemption 2</h1>
+          <h1 className="gameTitle">{game.name}</h1>
           <div className="ratingsContainer">
             <button className="ratingBtn">
               <i className="fas fa-plus"></i>
-              <p>2900</p>
+              <p>{game.ratings_count}</p>
             </button>
             <button className="ratingBtn">
               <i className="fas fa-gift"></i>
@@ -38,15 +40,18 @@ export default function Cards() {
         <div className="showMoreCard">
           <div className="detailsContainer">
             <p className="detailsKey">Release Date:</p>
-            <p className="detailsValue">25 June, 2016</p>
+            <p className="detailsValue">{game.released}</p>
           </div>
           <div className="detailsContainer">
             <p className="detailsKey">Genre:</p>
-            <p className="detailsValue">AAA</p>
+            <p className="detailsValue">
+              {game.genres[0]?.name} {game.genres[1]?.name}{' '}
+              {game.genres[2]?.name}
+            </p>
           </div>
           <div className="detailsContainer">
-            <p className="detailsKey">Chart:</p>
-            <p className="detailsValue">#1</p>
+            <p className="detailsKey">Our rating:</p>
+            <p className="detailsValue">{game.rating}/5</p>
           </div>
           <button className="detailsBtn">
             <p>Show more like this</p>
