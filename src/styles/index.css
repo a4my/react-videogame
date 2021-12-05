@@ -517,6 +517,7 @@ body {
 
 .sidebar .sidebarItem {
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 .sidebar .listItem {
@@ -525,6 +526,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 
 .sidebar .listItem:hover .listItemBtn {
