@@ -12,12 +12,14 @@
 
   .sidebarItem {
     margin-bottom: 1rem;
+    cursor: pointer;
   }
 
   .listItem {
     font-size: 1.6rem;
     display: flex;
     margin-bottom: 0.5rem;
+    cursor: pointer;
 
     &:hover .listItemBtn {
       background-color: $color-1;
