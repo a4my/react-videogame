@@ -9,19 +9,19 @@ export default function Sidebar() {
       <ul>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fas fa-gift"></i>
+            <i className="fas fa-gift"></i>
           </div>
           <p>Whishlist</p>
         </li>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fas fa-layer-group"></i>
+            <i className="fas fa-layer-group"></i>
           </div>
           <p>My library</p>
         </li>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fas fa-users"></i>
+            <i className="fas fa-users"></i>
           </div>
           <p>People I follow</p>
         </li>
@@ -30,25 +30,25 @@ export default function Sidebar() {
       <ul>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fas fa-trophy"></i>
+            <i className="fas fa-trophy"></i>
           </div>
           <p>Best of the year</p>
         </li>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fas fa-chart-bar"></i>
+            <i className="fas fa-chart-bar"></i>
           </div>
           <p>Popular in 2021</p>
         </li>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fas fa-crown"></i>
+            <i className="fas fa-crown"></i>
           </div>
           <p>All time top 250</p>
         </li>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fas fa-star"></i>
+            <i className="fas fa-star"></i>
           </div>
           <p>Last 30 days</p>
         </li>
@@ -58,25 +58,25 @@ export default function Sidebar() {
       <ul>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fab fa-windows"></i>
+            <i className="fab fa-windows"></i>
           </div>
           <p>PC</p>
         </li>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fab fa-playstation"></i>
+            <i className="fab fa-playstation"></i>
           </div>
           <p>Playstation 4</p>
         </li>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fab fa-xbox"></i>
+            <i className="fab fa-xbox"></i>
           </div>
           <p>Xbone One</p>
         </li>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fas fa-chevron-down"></i>
+            <i className="fas fa-chevron-down"></i>
           </div>
           <p>Show all</p>
         </li>
@@ -85,31 +85,31 @@ export default function Sidebar() {
       <ul>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fab fa-twitch"></i>
+            <i className="fab fa-twitch"></i>
           </div>
           <p>Twitch</p>
         </li>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fab fa-reddit-alien"></i>
+            <i className="fab fa-reddit-alien"></i>
           </div>
           <p>Reddit</p>
         </li>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fab fa-facebook-f"></i>
+            <i className="fab fa-facebook-f"></i>
           </div>
           <p>Facebook</p>
         </li>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fab fa-twitter"></i>
+            <i className="fab fa-twitter"></i>
           </div>
           <p>Twitter</p>
         </li>
         <li className="listItem">
           <div className="listItemBtn">
-            <i class="fas fa-chevron-down"></i>
+            <i className="fas fa-chevron-down"></i>
           </div>
           <p>Show all</p>
         </li>
