@@ -13,7 +13,6 @@ export default function CardsContainer() {
         setData(res.data.results)
         setLoadOnce(false)
       })
-      console.log(data)
     }
   }, [apiKey, data, loadOnce])
 
