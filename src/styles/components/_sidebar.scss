@@ -40,3 +40,9 @@
     }
   }
 }
+
+@media (max-width: 1300px) {
+  .sidebar {
+    flex: 2;
+  }
+}
