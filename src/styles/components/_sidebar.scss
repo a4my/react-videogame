@@ -6,7 +6,7 @@
   position: sticky;
   top: 7rem;
   left: 0;
-  overflow-y: hidden;
+  overflow-y: scroll;
   background-color: $color-2;
   padding: 1rem 0 1rem 3rem;
 
@@ -39,6 +39,17 @@
       margin-bottom: 1.5rem;
     }
   }
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $color-3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-2;
 }
 
 @media (max-width: 1300px) {
