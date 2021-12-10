@@ -19,6 +19,7 @@
       width: 100%;
       height: 20rem;
       border-radius: 1rem 1rem 0 0;
+      object-fit: cover;
     }
 
     .infoWrapper {
@@ -94,6 +95,12 @@
           transition: all 0.2s ease-in-out;
         }
       }
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .card-item {
+      width: 30rem;
     }
   }
 
