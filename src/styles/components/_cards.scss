@@ -101,6 +101,9 @@
   @media only screen and (max-width: 1300px) {
     .card-item {
       width: 30rem;
+      .gameCoverImg {
+        height: 15rem;
+      }
     }
   }
 
