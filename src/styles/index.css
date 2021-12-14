@@ -223,6 +223,9 @@ body {
   .card-container .card-item {
     width: 30rem;
   }
+  .card-container .card-item .gameCoverImg {
+    height: 15rem;
+  }
 }
 
 .card-container .card-item:hover .showMoreCard {
