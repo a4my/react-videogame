@@ -52,8 +52,38 @@
   background-color: $color-2;
 }
 
+@media (max-width: 1800px) {
+  .sidebar {
+    flex: 1.5;
+  }
+}
+
 @media (max-width: 1300px) {
   .sidebar {
     flex: 2;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    flex: 2.5;
+  }
+}
+
+@media (max-width: 780px) {
+  .sidebar {
+    flex: 3.5;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    flex: 4;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    flex: 5;
   }
 }
