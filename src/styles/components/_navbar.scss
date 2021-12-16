@@ -96,8 +96,8 @@
   }
   #menu-btn {
     position: absolute;
-    right: 2%;
-    font-size: 2rem;
+    right: 4%;
+    font-size: 3rem;
     cursor: pointer;
     display: none;
     transition: all 0.3s ease-in-out;
@@ -119,12 +119,28 @@
       top: 7rem;
       right: 0;
       background-color: $color-2;
-      padding: 1rem;
+      padding: 3rem;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       display: none;
       transition: all 0.3s ease-in-out;
+
+      i {
+        display: block;
+        margin: 2rem auto 3rem 2rem;
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      i:nth-child(1) {
+        margin-top: 0;
+      }
+
+      p {
+        margin-left: 1.7rem;
+      }
     }
     .account.active {
       display: block;
