@@ -94,4 +94,40 @@
       }
     }
   }
+  #menu-btn {
+    position: absolute;
+    right: 2%;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #menu-btn {
+      display: inline-block;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .searchbar {
+      width: 50%;
+      margin-right: 5rem;
+    }
+    .account {
+      position: absolute;
+      top: 7rem;
+      right: 0;
+      background-color: $color-2;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      display: none;
+      transition: all 0.3s ease-in-out;
+    }
+    .account.active {
+      display: block;
+    }
+  }
 }
