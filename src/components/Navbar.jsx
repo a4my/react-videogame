@@ -19,7 +19,7 @@ export default function Navbar() {
           <i className="fas fa-search"></i>
           <input type="text" placeholder="Search for a game" />
         </div>
-        <div className={isActive ? 'account' : 'account active'}>
+        <div className={isActive ? 'account active' : 'account'}>
           <i className="fas fa-bell"></i>
           <i className="fas fa-plus"></i>
           <i className="fas fa-cog"></i>
