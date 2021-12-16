@@ -228,6 +228,24 @@ body {
   }
 }
 
+@media only screen and (max-width: 780px) {
+  .card-container .card-item {
+    width: 37rem;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .card-container .card-item {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .card-container .card-item {
+    width: 26rem;
+  }
+}
+
 .card-container .card-item:hover .showMoreCard {
   display: block;
 }
@@ -570,11 +588,51 @@ body {
   background-color: #11171a;
 }
 
+@media (max-width: 1800px) {
+  .sidebar {
+    -webkit-box-flex: 1.5;
+        -ms-flex: 1.5;
+            flex: 1.5;
+  }
+}
+
 @media (max-width: 1300px) {
   .sidebar {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    -webkit-box-flex: 2.5;
+        -ms-flex: 2.5;
+            flex: 2.5;
+  }
+}
+
+@media (max-width: 780px) {
+  .sidebar {
+    -webkit-box-flex: 3.5;
+        -ms-flex: 3.5;
+            flex: 3.5;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
   }
 }
 
