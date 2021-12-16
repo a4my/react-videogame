@@ -107,6 +107,24 @@
     }
   }
 
+  @media only screen and (max-width: 780px) {
+    .card-item {
+      width: 37rem;
+    }
+  }
+
+  @media only screen and (max-width: 570px) {
+    .card-item {
+      width: 30rem;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .card-item {
+      width: 26rem;
+    }
+  }
+
   .card-item:hover {
     .showMoreCard {
       display: block;
