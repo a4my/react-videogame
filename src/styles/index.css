@@ -532,8 +532,8 @@ body {
 
 .navbar #menu-btn {
   position: absolute;
-  right: 2%;
-  font-size: 2rem;
+  right: 4%;
+  font-size: 3rem;
   cursor: pointer;
   display: none;
   -webkit-transition: all 0.3s ease-in-out;
@@ -556,19 +556,35 @@ body {
     top: 7rem;
     right: 0;
     background-color: #11171a;
-    padding: 1rem;
+    padding: 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     display: none;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+  }
+  .navbar .account i {
+    display: block;
+    margin: 2rem auto 3rem 2rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .navbar .account i:nth-child(1) {
+    margin-top: 0;
+  }
+  .navbar .account p {
+    margin-left: 1.7rem;
   }
   .navbar .account.active {
     display: block;
