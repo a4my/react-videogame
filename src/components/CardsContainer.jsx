@@ -1,4 +1,3 @@
-import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Cards from './Cards'
 
@@ -9,10 +8,16 @@ export default function CardsContainer() {
 
   useEffect(() => {
     if (loadOnce) {
-      axios.get('https://api.rawg.io/api/games?key=' + apiKey).then(res => {
-        setData(res.data.results)
-        setLoadOnce(false)
-      })
+      fetch('https://api.rawg.io/api/games?key=' + apiKey)
+        .then(res => res.json())
+        .then(data => {
+          if (!data.errors) {
+            setData(data.results)
+            setLoadOnce(false)
+          } else {
+            setData([])
+          }
+        })
     }
   }, [apiKey, data, loadOnce])
 
