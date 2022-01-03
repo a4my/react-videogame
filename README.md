@@ -5,7 +5,7 @@ This repository contains the files of one of my React projects. This React App i
 This project has parts that are mainly hard-coded and you cannot use the searchbar to search for a specific video game. However, the list of video games is coming from an API.
 
 
-## Demo 🖥 [live preview]()
+## Demo 🖥 [live preview](https://a4my.github.io/react-videogame/)
 
 ![site image](https://i.imgur.com/lhcCn0w.png)
 ![site image](https://i.imgur.com/pgFli38.png)
